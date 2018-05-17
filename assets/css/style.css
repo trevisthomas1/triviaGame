@@ -1,0 +1,56 @@
+.jumbotron {
+	background-image: url("../images/office.jpg"), url("../images/trivia.png");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+}
+
+body {
+	background-image: url("nybg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#display {
+	color: black;
+	font-family: Helvetica;
+	text-align: center;
+	font-size: 35px;
+}
+
+#questionList {
+	color: #00264d;
+	font-family: Helvetica;
+	font-size: 20px;
+}
+
+#intro {
+	color: black;
+	font-family: Helvetica;
+	font-size: 45px;
+	text-align: center;
+}
+
+#SplashScreen {
+	text-align: center;
+}
+
+#StartButton {
+	padding: 18px 28px;
+	font-size: 22px;
+	line-height: normal;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color: #00264d;
+	background-color: white;
+	font-family: Helvetica;
+}
+
+#results {
+	color: black;
+	font-family: Helvetica;
+	font-size: 45px;
+	text-align: center;
+}

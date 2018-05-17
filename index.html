@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Office Trivia Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+        <div class="jumbotron"></div>
+
+
+    <div class="row"></div>
+
+    <div class="container">
+        <div id="mainSection">
+            <div id="SplashScreen">
+                <h1 id="intro">Answer 8 questions about the office in 60 seconds or less to prove you're the dominant species.</h1>
+                <input id="StartButton" class="btn btn-primary" type="button" value="Start" />
+            </div>
+
+            <!-- TIME REMAINING DIV -->
+            <h2 id="display">Time Remaining: </h2>
+
+
+            <div id="questionList">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>What kind of bear is best?</h2>
+                        <input type="checkbox" name="question1" value="wrong"> Polar Bear
+                        <br>
+                        <input type="checkbox" name="question1" value="wrong"> Grizzly Bear
+                        <br>
+                        <input type="checkbox" name="question1" value="correct"> Black Bear
+                        <br>
+                        <input type="checkbox" name="question1" value="wrong"> Panda Bear
+                        <br>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>In S2E12 "The Injury": What is Michael's injury?</h2>
+                        <input type="checkbox" name="question2" value="wrong"> He gets his head stuck in a stair railing
+                        <br>
+                        <input type="checkbox" name="question2" value="wrong"> He crashes his car into a telephone pole
+                        <br>
+                        <input type="checkbox" name="question2" value="wrong"> He slips in the shower
+                        <br>
+                        <input type="checkbox" name="question2" value="correct"> He burns his foot on a George Foreman Grill
+                        <br>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>Where did Andy attend college?</h2>
+                        <input type="checkbox" name="question3" value="correct"> Cornell
+                        <br>
+                        <input type="checkbox" name="question3" value="wrong"> Northeastern
+                        <br>
+                        <input type="checkbox" name="question3" value="wrong"> Dartmouth
+                        <br>
+                        <input type="checkbox" name="question3" value="wrong"> Brown
+                        <br>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>Where does Michael consider the "New golf course" of business?</h2>
+                        <input type="checkbox" name="question4" value="wrong"> Steamtown Mall
+                        <br>
+                        <input type="checkbox" name="question4" value="correct"> Chili's
+                        <br>
+                        <input type="checkbox" name="question4" value="wrong"> Bowling Alley
+                        <br>
+                        <input type="checkbox" name="question4" value="wrong"> Scranton Business Park
+                        <br>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1>Dwight claims to raise his ___________ at will.</h1>
+                        <input type="checkbox" name="question5" value="wrong"> Body Temperature
+                        <br>
+                        <input type="checkbox" name="question5" value="correct"> Cholesterol
+                        <br>
+                        <input type="checkbox" name="question5" value="wrong"> Height
+                        <br>
+                        <input type="checkbox" name="question5" value="wrong"> Sales Performance
+                        <br>
+                    </div>
+                </div>
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1>What is one of the events in "Office Olympics"?</h1>
+                        <input type="checkbox" name="question6" value="wrong"> Bear Shoot
+                        <br>
+                        <input type="checkbox" name="question6" value="wrong"> Texas Toast
+                        <br>
+                        <input type="checkbox" name="question6" value="correct"> Flonkerton
+                        <br>
+                        <input type="checkbox" name="question6" value="wrong"> Fax Fast
+                        <br>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1>What did Angela give Creed for Christmas in "Classy Christmas"?</h1>
+                        <input type="checkbox" name="question7" value="correct"> Pack of Deodorant
+                        <br>
+                        <input type="checkbox" name="question7" value="wrong"> Cat Calendar
+                        <br>
+                        <input type="checkbox" name="question7" value="wrong"> Baby Poster
+                        <br>
+                        <input type="checkbox" name="question7" value="wrong"> Bible
+                        <br>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1> Who said, "Disposable cameras are fun, although it does seem a little wasteful, and you never get to see any of your pictures"?</h1>
+                        <input type="checkbox" name="question8" value="wrong"> Kelly
+                        <br>
+                        <input type="checkbox" name="question8" value="wrong"> Kevin
+                        <br>
+                        <input type="checkbox" name="question8" value="wrong"> Michael
+                        <br>
+                        <input type="checkbox" name="question8" value="correct"> Erin
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="results"></div>
+
+
+
+
+</body>
+
+</html>
