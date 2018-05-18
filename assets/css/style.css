@@ -37,7 +37,7 @@ body {
 }
 
 #startScreen {
-	align: center;
+	text-align: center;
 }
 
 #StartButton {
@@ -70,4 +70,9 @@ body {
 	color: black;
 	background-color: white;
 	font-family: Helvetica;
+}
+
+#submit {
+	margin-bottom: 5em;
+	text-align: center !important;
 }

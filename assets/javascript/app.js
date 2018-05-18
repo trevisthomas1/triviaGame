@@ -47,10 +47,10 @@ $(window).ready(function () {
     }
 
     function submitButton() {
-        var submit = $("<button class='btn-lg active submit'>Submit</button>").click(function () {
+        var submit = $("<button class='btn-lg active'>Submit</button>").click(function () {
             stop();
         });
-        $("#questions").append(submit);
+        $("#submit").append(submit);
     }
 
     function displayResults() {
