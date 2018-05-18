@@ -1,67 +1,44 @@
-$(document).ready(function () {
+$(window).ready(function () {
 
-
-    $("#questionList").hide();
+    $("#questions").hide();
     $("#results").hide();
     $("#display").hide();
     var intervalId;
     var number = 60;
     var correct = 0;
-    var wrong = 0;
+    var incorrect = 0;
     var noAnswer = 0;
-
-
-
 
     function run() {
         intervalId = setInterval(decrement, 1000);
     }
 
-
-    //CREATED FUNCTION TO STOP THE GAME AFTER TIMER <=0
     function stop() {
         clearInterval(intervalId);
-        $("#questionList").hide();
+        $("#questions").hide();
         $("#display").hide();
         $("#results").show();
         displayResults();
     }
 
-
-
-
-
-    //START GAME FUNCTION, HIDES / SHOWS INFORMATION
     $("#StartButton").click(function () {
-        $("#SplashScreen").hide();
+        $("#startScreen").hide();
         $("#display").show();
-        $("#questionList").show();
-        //RUNS "RUN" FUNCTION	
+        $("#questions").show();
         run();
         submitButton();
     });
 
-
-
-
-
-
-
-
     function decrement() {
         number--;
         $("#display").html("<h2>" + "Time Remaining: " + number + "</h2>");
-
         if (number <= 0) {
             stop();
-
         }
     }
 
-
-
     function restartGame(message) {
-        var restart = $("<button class='btn-lg active'>Restart</button>").click(function () {
+        var restart = $("<button class='btn-lg active restart'>Restart</button>").click(function () {
             location.reload();
         });
         var gameState = $("<div>").text(message);
@@ -70,10 +47,10 @@ $(document).ready(function () {
     }
 
     function submitButton() {
-        var submit = $("<button class='btn-lg active'>Submit</button>").click(function () {
+        var submit = $("<button class='btn-lg active submit'>Submit</button>").click(function () {
             stop();
         });
-        $("#questionList").append(submit);
+        $("#questions").append(submit);
     }
 
     function displayResults() {
@@ -87,29 +64,26 @@ $(document).ready(function () {
                     correct++;
                     checked = true;
                     break;
-                } else if (radio.value == "wrong" && radio.checked) {
-                    wrong++;
+                } else if (radio.value == "incorrect" && radio.checked) {
+                    incorrect++;
                     checked = true;
                     break;
                 } else if (!radio.checked) {
                     checked = false;
                 }
-
             }
             if (checked === false) {
-                wrong++;
+                incorrect++;
             }
         }
 
         var theResults = $("#results");
         var correctScore = $("<h1>").text("Correct: " + correct);
-        var wrongScore = $("<h1>").text("Wrong: " + wrong);
+        var incorrectScore = $("<h1>").text("Incorrect: " + incorrect);
         theResults.append(correctScore);
-        theResults.append(wrongScore);
-        restartGame("Click restart to play again")
+        theResults.append(incorrectScore);
+        restartGame("Click restart to try again. Or don't.")
 
     }
-
-
 
 });

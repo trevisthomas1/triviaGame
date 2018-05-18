@@ -4,35 +4,39 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: white;
+	padding-top: 5%;
 }
 
 body {
-	background-image: url("nybg.jpg");
+	background-image: url("../images/office-cast.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #display {
-	color: black;
+	color: white;
 	font-family: Helvetica;
+	text-shadow: 3px 3px black;
 	text-align: center;
 	font-size: 35px;
 }
 
-#questionList {
+#questions {
 	color: #00264d;
 	font-family: Helvetica;
 	font-size: 20px;
 }
 
 #intro {
-	color: black;
+	color: white;
 	font-family: Helvetica;
-	font-size: 45px;
+	text-shadow: 3px 3px black;
+	font-size: 50px;
 	text-align: center;
+	padding-bottom: 5%;
 }
 
-#SplashScreen {
+#startScreen {
 	text-align: center;
 }
 
@@ -43,14 +47,27 @@ body {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	color: #00264d;
+	color: black;
 	background-color: white;
 	font-family: Helvetica;
 }
 
 #results {
-	color: black;
+	color: white;
 	font-family: Helvetica;
+	text-shadow: 3px 3px black;
 	font-size: 45px;
 	text-align: center;
+}
+
+.restart, .submit {
+	padding: 18px 28px;
+	font-size: 22px;
+	line-height: normal;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color: black;
+	background-color: white;
+	font-family: Helvetica;
 }
