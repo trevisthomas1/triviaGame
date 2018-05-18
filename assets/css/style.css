@@ -37,7 +37,7 @@ body {
 }
 
 #startScreen {
-	text-align: center;
+	align: center;
 }
 
 #StartButton {
@@ -60,7 +60,7 @@ body {
 	text-align: center;
 }
 
-.restart, .submit {
+.restart, .submit, .start {
 	padding: 18px 28px;
 	font-size: 22px;
 	line-height: normal;
