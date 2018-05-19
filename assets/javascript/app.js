@@ -54,11 +54,11 @@ $(window).ready(function () {
     }
 
     function displayResults() {
+        $("#submit").empty();
         var checked = false;
         for (var i = 1; i <= 8; i++) {
             var radios = document.getElementsByName('question' + i);
             for (var j = 0; j < radios.length; j++) {
-                //function to check if answer is correct
                 var radio = radios[j];
                 if (radio.value == "correct" && radio.checked) {
                     correct++;
@@ -77,12 +77,20 @@ $(window).ready(function () {
             }
         }
 
-        var theResults = $("#results");
-        var correctScore = $("<h1>").text("Correct: " + correct);
-        var incorrectScore = $("<h1>").text("Incorrect: " + incorrect);
-        theResults.append(correctScore);
-        theResults.append(incorrectScore);
-        restartGame("Click restart to try again. Or don't.")
+        if(correct >= 5) {
+            var score = $("<h1>").html("Correct: " + correct + "<br>" + "Incorrect: " + incorrect + "<br>" + "That was a subpar peformance.") 
+                  } else {
+            var score = $("<h1>").html("Correct: " + correct + "<br>" + "Incorrect: " + incorrect + "<br>" + "You bring dishonor to your family.")
+                  };
+        $("#results").append(score);
+        restartGame("Click to restart to take the quiz again. Or don't.")
+
+        // var theResults = $("#results");
+        // var correctScore = $("<h1>").text("Correct: " + correct);
+        // var incorrectScore = $("<h1>").text("Incorrect: " + incorrect);
+        // theResults.append(correctScore);
+        // theResults.append(incorrectScore);
+        // restartGame("Click restart to take the quiz again. Or don't.")
 
     }
 
